@@ -23,7 +23,7 @@
         </Grid.ColumnDefinitions>
 
         <TextBlock x:Name="title" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" FontSize="32"  TextAlignment="Center" Padding="20">Szyfr Vigenère’a</TextBlock>
-        <TextBox MouseDoubleClick="textset_MouseDoubleClick" AcceptsTab="True" AcceptsReturn="True" TextWrapping="Wrap" x:Name="textset" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="20,5,20,5">Podaj tekst do szyfrowania lub deszyfrowania</TextBox>
+        <TextBox MouseDoubleClick="textset_MouseDoubleClick" AcceptsTab="True" AcceptsReturn="True" TextWrapping="Wrap" x:Name="textset" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="20,5,20,5"  VerticalScrollBarVisibility="Visible">Podaj tekst do szyfrowania lub deszyfrowania</TextBox>
 
         <TextBox  MouseDoubleClick="cipher_MouseDoubleClick"  x:Name="cipher" Grid.Column="2" Grid.Row="1" Margin="20,5,20,5" TextWrapping="Wrap" AcceptsTab="True" AcceptsReturn="True">
             Wprowadź klucz szyfrujący
@@ -33,7 +33,7 @@
         <Button x:Name="button2" Grid.Column="1" Grid.Row="2" Margin="20" Click="Button_ClickDeszyfruj" Background="AntiqueWhite">Deszyfruj</Button>
         <Button x:Name="button3" Grid.Column="2" Grid.Row="2" Margin="20" Click="Button_ClickCzysc" Background="AntiqueWhite">Wyczyść</Button>
 
-        <TextBox x:Name="textget" Grid.Row="3" Grid.ColumnSpan="3" TextAlignment="Left" Margin="20" Background="AntiqueWhite" IsReadOnly="True">Tekst po szyfrowaniu lub deszyfrowaniu</TextBox>
+        <TextBox x:Name="textget" Grid.Row="3" Grid.ColumnSpan="3" TextAlignment="Left" Margin="20" Background="AntiqueWhite" IsReadOnly="True" TextWrapping="Wrap" AcceptsTab="True" AcceptsReturn="True" VerticalScrollBarVisibility="Visible">Tekst po szyfrowaniu lub deszyfrowaniu</TextBox>
 
         <TextBlock x:Name="name" Grid.Row="4" Grid.ColumnSpan="3" TextAlignment="Center" Padding="30" Background="AliceBlue">Wykonał Dawid Dziad</TextBlock>
     </Grid>
